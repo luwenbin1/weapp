@@ -1,9 +1,8 @@
 <view class="root">
     <view class="line">
         <text>综合示例</text>
-        <view bindtap="openChat" class="demo">
-            三木聊天室
-            <view class="link">Demo体验 ></view>
+        <view bindtap="openChat" class="line-control">
+            <view class="item"><view class="item-inner">Utour前端聊天室</view></view>
         </view>
     </view>
     <view class="line">

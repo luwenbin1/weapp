@@ -41,7 +41,7 @@ Page({
      */
     data: {
         messages: [],
-        inputContent: '大家好啊',
+        inputContent: '大家好啊！',
         lastMessageId: 'none',
     },
 
@@ -49,7 +49,7 @@ Page({
      * 页面渲染完成后，启动聊天室
      * */
     onReady() {
-        wx.setNavigationBarTitle({ title: '三木聊天室' });
+      wx.setNavigationBarTitle({ title: 'Utour前端聊天室' });
 
         if (!this.pageReady) {
             this.pageReady = true;
