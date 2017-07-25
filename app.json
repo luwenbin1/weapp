@@ -1,12 +1,18 @@
 {
     "pages": [
         "pages/index/index",
-        "pages/chat/chat"
+        "pages/chat/chat",
+        "pages/say/say"
     ],
     "window": {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#333",
-        "navigationBarTitleText": "腾讯云小程序解决方案",
+        "navigationBarTitleText": "666",
         "navigationBarTextStyle": "white"
-    }
+    },
+    "networkTimeout": {
+      "request": 10000,
+      "downloadFile": 10000
+    },
+    "debug": true
 }

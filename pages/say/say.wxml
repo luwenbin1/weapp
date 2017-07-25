@@ -1,0 +1,8 @@
+<!--pages/say/say.wxml-->
+<form bindsubmit="formSubmit" report-submit="5RbwBM4eOjCVdyG8N7zCG7xmXx1WSwQyCK_Tj6Oc3To" name="form1">
+  <view class="section">
+    <textarea auto-height placeholder="想要对我说" name="textarea" class="textarea"/>
+  </view>
+  <button form-type="submit">想要对我说</button>
+  <button open-type="contact">进入客服会话</button>
+</form>
