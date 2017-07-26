@@ -2,7 +2,8 @@
     "pages": [
         "pages/index/index",
         "pages/chat/chat",
-        "pages/say/say"
+        "pages/say/say",
+        "pages/forme/forme"
     ],
     "window": {
         "backgroundTextStyle": "light",

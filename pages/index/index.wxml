@@ -14,6 +14,14 @@
         </view>
     </view>
     <view class="line">
+        <text>综合示例三</text>
+        <view class="line-control">
+            <navigator url="../forme/forme" open-type="navigateTo">
+                <view class="item"><view class="item-inner">对我说的话</view></view>
+            </navigator>
+        </view>
+    </view>
+    <view class="line">
         <text>登录接口测试</text>
         <input type="text" value="{{loginUrl}}" disabled class="hide"></input>
         <view class="line-control">

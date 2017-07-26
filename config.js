@@ -22,6 +22,9 @@ var config = {
 
         // 测试say
         sayUrl: `https://${host}/say`,
+
+        // 测试say
+        formeUrl: `https://${host}/forme`
     }
 };
 

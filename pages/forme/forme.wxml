@@ -1,0 +1,10 @@
+<!--pages/forme/forme.wxml-->
+<scroll-view>
+    <view wx:for="{{list}}" class="main">
+      <view class="main_top">
+        <image src="{{item.url}}"/><view class="user">{{item.username}}</view>
+      </view>
+      <view class="main_m">{{item.main}}</view>
+      <view class="main_time">{{item.time}}</view>
+    </view>
+</scroll-view>

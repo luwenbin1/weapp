@@ -1,0 +1,24 @@
+/* pages/forme/forme.wxss */
+.main{
+  margin: 30rpx;
+}
+.main_top{
+  overflow: hidden;
+}
+.main_top image{
+  float: left;
+  width: 100rpx;
+  height: 100rpx;
+}
+.main_top .user{
+  float: left;
+  line-height: 100rpx;
+  margin-left: 30rpx;
+}
+.main_m{
+  margin-top: 20rpx;
+}
+.main_time{
+  text-align: right;
+  font-size: 24rpx;
+}
