@@ -14,28 +14,83 @@ var showModel = (title, content) => {
 };
 var data_list='';
 
-wx.request({
-  url: config.service.formeUrl,
+Page({
   data: {
-    page: 0,
-    index: 2
+    page:0,
+    index:10,
+    list: []
   },
-  header: {
-    'content-type': 'application/json'
-  },
-  success: function (res) {
-    if (res.statusCode == 200) {
-      data_list = res.data;
-      Page({
-        data: {
-          list: data_list
+  onLoad: function (options) {
+    var _this = this;
+    wx.request({
+      url: config.service.formeUrl,
+      data: {
+        page: _this.data.page,
+        index: _this.data.index
+      },
+      header: {
+        'content-type': 'application/json'
+      },
+      success: function (res) {
+        if (res.statusCode == 200) {
+          data_list = res.data;
+          _this.setData({
+            "list": data_list
+          });
+        } else {
+          showModel('网络出错', '请联系管理员');
         }
-      })
-    } else {
-      showModel('网络出错', '请联系管理员');
-    }
+      },
+      error: function () {
+        showModel('网络出错', '请联系管理员');
+      }
+    });
   },
-  error: function () {
-    showModel('网络出错', '请联系管理员');
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+    var _this = this;
+    var page = _this.data.page;
+    var index = _this.data.index;
+    var new_page = (parseInt(page)+1)*10;
+    console.log(new_page);
+    wx.request({
+      url: config.service.formeUrl,
+      data: {
+        page: new_page,
+        index: index
+      },
+      header: {
+        'content-type': 'application/json'
+      },
+      success: function (res) {
+        _this.setData({
+          "page": parseInt(page) + 1
+        });
+        if (res.statusCode == 200) {
+          var data_list = res.data;
+          if (data_list.length === 0){
+            wx.showToast({
+              title: "到底啦！",
+              icon: 'success'
+            });
+          }
+          var data_list_old = _this.data.list;
+          for (var i = 0; i < data_list.length;i++){
+            data_list_old.push(data_list[i]);
+          }
+          _this.setData({
+            "list": data_list_old
+          });
+        } else {
+          showModel('网络出错', '请联系管理员');
+        }
+      },
+      error: function () {
+        showModel('网络出错', '请联系管理员');
+      }
+    });
   }
-});
+})
+
