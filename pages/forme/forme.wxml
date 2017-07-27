@@ -2,7 +2,7 @@
 <scroll-view>
     <view wx:for="{{list}}" class="main">
       <view class="main_top">
-        <image src="{{item.url}}"/><view class="user">{{item.username}}</view>
+        <image src="{{item.url}}"/><view class="user">{{item.username}}</view><view class="del" bindtap="del" data-id="{{item.id}}" wx:if="{{user === item.username}}">删除</view>
       </view>
       <view class="main_m">{{item.main}}</view>
       <view class="main_time">{{item.time}}</view>
