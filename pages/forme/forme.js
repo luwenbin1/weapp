@@ -13,12 +13,12 @@ var showModel = (title, content) => {
   });
 };
 var data_list='';
-var isload = true;
 
 Page({
   data: {
     page:0,
     index:10,
+    isload: true,
     list: []
   },
   onLoad: function (options) {
@@ -105,7 +105,7 @@ Page({
   },
 
   onReachBottom: function () {
-    if(isload){
+    if(this.data.isload){
       var _this = this;
       var page = _this.data.page;
       var index = _this.data.index;
@@ -131,7 +131,7 @@ Page({
                 title: "到底啦！",
                 icon: 'success'
               });
-              isload = false;
+              _this.data.isload = false;
             }
             var data_list_old = _this.data.list;
             for (var i = 0; i < data_list.length;i++){
