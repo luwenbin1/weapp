@@ -24,7 +24,10 @@ var config = {
         sayUrl: `https://${host}/say`,
 
         // 测试say
-        formeUrl: `https://${host}/forme`
+        formeUrl: `https://${host}/forme`,
+
+        // 测试say
+        forme_delUrl: `https://${host}/forme_del`
     }
 };
 

@@ -63,16 +63,45 @@ Page({
     });
   },
   del(event) {
+    var _this = this;
     var id = event.currentTarget.dataset.id;
     var list = this.data.list;
-    for (var i = 0; i < list.length; i++){
-      if (list[i].id === id){
-        list.splice(i, 1);
-      }
-    }
-    this.setData({
-      "list": list
+    wx.showToast({
+      title: "删除中",
+      icon: 'loading',
+      duration: 10000
     });
+    wx.request({
+      url: config.service.forme_delUrl,
+      data: {
+        id: id,
+      },
+      header: {
+        'content-type': 'application/json'
+      },
+      success: function (res) {
+        wx.hideToast();
+        if (res.statusCode == "200") {
+          wx.showToast({
+            title: "删除成功",
+            icon: 'success'
+          });
+          for (var i = 0; i < list.length; i++) {
+            if (list[i].id === id) {
+              list.splice(i, 1);
+            }
+          }
+          _this.setData({
+            "list": list
+          });
+        } else {
+          showModel('网络出错', '请联系管理员');
+        }
+      },
+      error: function () {
+        showModel('网络出错', '请联系管理员');
+      }
+    })
   },
 
   onReachBottom: function () {
