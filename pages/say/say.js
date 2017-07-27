@@ -102,6 +102,7 @@ Page({
       success: function (res) {
         if(res.data == 200){
           showModel('发送成功', '非常感谢!您对我说' + e.detail.value.textarea);
+          setTimeout(function () { wx.navigateTo({ url: '../forme/forme' })},1000)
         }else{
           showModel('网络出错', '请联系管理员');
         }
