@@ -3,7 +3,8 @@
         "pages/index/index",
         "pages/chat/chat",
         "pages/say/say",
-        "pages/forme/forme"
+        "pages/forme/forme",
+        "pages/upload_img/upload_img"
     ],
     "window": {
         "backgroundTextStyle": "light",

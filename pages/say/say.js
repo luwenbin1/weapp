@@ -90,7 +90,7 @@ Page({
     };
     
     const requestTask = wx.request({
-      url: config.service.sayUrl, //仅为示例，并非真实的接口地址
+      url: config.service.sayUrl,
       data: {
         value: e.detail.value.textarea,
         user: nickName,

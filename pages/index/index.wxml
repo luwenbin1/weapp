@@ -22,6 +22,14 @@
         </view>
     </view>
     <view class="line">
+        <text>综合示例四</text>
+        <view class="line-control">
+            <navigator url="../upload_img/upload_img" open-type="navigateTo">
+                <view class="item"><view class="item-inner">上传图片</view></view>
+            </navigator>
+        </view>
+    </view>
+    <view class="line">
         <text>登录接口测试</text>
         <input type="text" value="{{loginUrl}}" disabled class="hide"></input>
         <view class="line-control">

@@ -22,11 +22,8 @@ var config = {
 
         // 测试say
         sayUrl: `https://${host}/say`,
-
-        // 测试say
         formeUrl: `https://${host}/forme`,
-
-        // 测试say
+        up_img: `https://${host}/up_img`,
         forme_delUrl: `https://${host}/forme_del`
     }
 };

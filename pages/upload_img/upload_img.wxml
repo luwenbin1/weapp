@@ -1,0 +1,10 @@
+<!--pages/upload_img/upload_img.wxml-->
+<view class="main">
+    <view class="img" wx:for="{{img}}">
+        <image src="{{item}}" ></image>
+    </view>
+</view>
+<navigator url="../index/index" open-type="navigateTo">
+    <button type="primary">取消</button>
+</navigator>
+<button type="warn" bindtap="up">确认上传</button>
