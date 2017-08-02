@@ -80,6 +80,10 @@ Page({
   },
   up:function(){
     var tempFilePaths = this.data.tempFilePaths;
+    if (!tempFilePaths){
+      this.onLoad()
+      return false;
+    }
     wx.showToast({
       title: "上传中",
       icon: 'loading',
