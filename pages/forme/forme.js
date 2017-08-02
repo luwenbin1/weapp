@@ -106,6 +106,11 @@ Page({
 
   onReachBottom: function () {
     if(this.data.isload){
+      wx.showToast({
+        title: "正在加载",
+        icon: 'loading',
+        duration: 10000
+      });
       var _this = this;
       var page = _this.data.page;
       var index = _this.data.index;
@@ -121,6 +126,7 @@ Page({
           'content-type': 'application/json'
         },
         success: function (res) {
+          wx.hideToast();
           _this.setData({
             "page": parseInt(page) + 1
           });
