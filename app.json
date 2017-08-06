@@ -4,6 +4,7 @@
         "pages/chat/chat",
         "pages/say/say",
         "pages/forme/forme",
+        "pages/sign/sign",
         "pages/upload_img/upload_img"
     ],
     "window": {

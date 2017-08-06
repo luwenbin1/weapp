@@ -155,5 +155,13 @@ wx.getUserInfo({
     province = userInfo.province;
     city = userInfo.city;
     country = userInfo.country;
+    wx.setStorage({
+      key: "nickName",
+      data: nickName,
+    })
+    wx.setStorage({
+      key: "avatarUrl",
+      data: avatarUrl,
+    })
   }
 });

@@ -1,0 +1,29 @@
+/* pages/sign/sign.wxss */
+.main{
+  overflow: hidden;
+  margin: 40rpx;
+}
+.main image{
+  width: 64rpx;
+  height: 64rpx;
+  float: left;
+  margin-right: 20rpx;
+}
+.main .user{
+  float: left;
+  line-height: 64rpx;
+  font-size: 24rpx;
+}
+.main .see, .main .time{
+  float: right;
+  line-height: 64rpx;
+  margin-left: 20rpx;
+  font-size: 24rpx;
+}
+.classname{
+  float: left;
+  line-height: 64rpx;
+  font-size: 24rpx;
+  width: 40rpx;
+  text-align: center;
+}

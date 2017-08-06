@@ -30,6 +30,12 @@
         </view>
     </view>
     <view class="line">
+        <text>综合示例五</text>
+        <view class="line-control" bindtap="sign">
+            <view class="item"><view class="item-inner">签到</view></view>
+        </view>
+    </view>
+    <view class="line">
         <text>登录接口测试</text>
         <input type="text" value="{{loginUrl}}" disabled class="hide"></input>
         <view class="line-control">

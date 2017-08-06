@@ -24,6 +24,8 @@ var config = {
         sayUrl: `https://${host}/say`,
         formeUrl: `https://${host}/forme`,
         up_img: `https://${host}/up_img`,
+        sign: `https://${host}/sign`,
+        resign: `https://${host}/resign`,
         forme_delUrl: `https://${host}/forme_del`
     }
 };

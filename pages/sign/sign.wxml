@@ -1,0 +1,10 @@
+<!--pages/sign/sign.wxml-->
+<scroll-view>
+    <view class="main" wx:for="{{list}}">
+        <view class="classname">{{index}}</view>
+        <image src="{{item.images}}"/>
+        <view class="user">{{item.username}}</view>
+        <view class="see" bindtap="see" data-latitude="{{item.latitude}}" data-longitude="{{item.longitude}}">查看位置</view>
+        <view class="time">{{item.time}}</view>
+    </view>
+</scroll-view>

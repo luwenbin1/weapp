@@ -208,4 +208,64 @@ Page({
         this.closeTunnel();
         wx.navigateTo({ url: '../chat/chat' });
     },
+    sign(){
+      wx.getLocation({
+        type: 'gcj02', //返回可以用于wx.openLocation的经纬度
+        success: function (res) {
+          var latitude = res.latitude
+          var longitude = res.longitude;
+          var nickName = wx.getStorageSync('nickName');
+          var avatarUrl = wx.getStorageSync('avatarUrl');
+          wx.request({
+            url: config.service.sign,
+            data: {
+              latitude: latitude,
+              longitude: longitude,
+              nickName: nickName,
+              avatarUrl: avatarUrl
+            },
+            header: {
+              'content-type': 'application/json'
+            },
+            success: function (res) {
+              if (res.data == 200) {
+                showSuccess('发送成功');
+                setTimeout(function () { wx.navigateTo({ url: '../sign/sign' }) }, 1000)
+              } else {
+                showModel('网络出错', '请联系管理员');
+              }
+            },
+            error: function () {
+              showModel('网络出错', '请联系管理员');
+            }
+          });
+        }
+      })
+    }
+});
+var userInfo = '';
+var nickName = '';
+var avatarUrl = '';
+var gender = '';
+var province = '';
+var city = '';
+var country = '';
+wx.getUserInfo({
+  success: function (res) {
+    userInfo = res.userInfo;
+    nickName = userInfo.nickName;
+    avatarUrl = userInfo.avatarUrl;
+    gender = userInfo.gender; //性别 0：未知、1：男、2：女
+    province = userInfo.province;
+    city = userInfo.city;
+    country = userInfo.country;
+    wx.setStorage({
+      key: "nickName",
+      data: nickName,
+    })
+    wx.setStorage({
+      key: "avatarUrl",
+      data: avatarUrl,
+    })
+  }
 });
