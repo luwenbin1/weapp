@@ -209,6 +209,11 @@ Page({
         wx.navigateTo({ url: '../chat/chat' });
     },
     sign(){
+      wx.showToast({
+        title: "正在定位，请稍后！",
+        icon: 'loading',
+        duration: 10000
+      });
       wx.getLocation({
         type: 'gcj02', //返回可以用于wx.openLocation的经纬度
         success: function (res) {
@@ -229,13 +234,16 @@ Page({
             },
             success: function (res) {
               if (res.data == 200) {
+                wx.hideToast();
                 showSuccess('发送成功');
                 setTimeout(function () { wx.navigateTo({ url: '../sign/sign' }) }, 1000)
               } else {
+                wx.hideToast();
                 showModel('网络出错', '请联系管理员');
               }
             },
             error: function () {
+              wx.hideToast();
               showModel('网络出错', '请联系管理员');
             }
           });

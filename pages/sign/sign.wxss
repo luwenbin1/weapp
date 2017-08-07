@@ -1,7 +1,7 @@
 /* pages/sign/sign.wxss */
 .main{
   overflow: hidden;
-  margin: 40rpx;
+  margin: 40rpx 20rpx;
 }
 .main image{
   width: 64rpx;
@@ -26,4 +26,10 @@
   font-size: 24rpx;
   width: 40rpx;
   text-align: center;
+}
+.main .time{
+  overflow:hidden;
+  width:66px;
+  height:64rpx;
+  word-break:break-all;
 }

@@ -8,7 +8,7 @@ Page({
    */
   data: {
     page: 0,
-    index: 10,
+    index: 20,
     isload: true,
     list: []
   },
@@ -87,7 +87,7 @@ Page({
       var _this = this;
       var page = _this.data.page;
       var index = _this.data.index;
-      var new_page = (parseInt(page) + 1) * 10;
+      var new_page = (parseInt(page) + 1) * 20;
       console.log(new_page);
       wx.request({
         url: config.service.resign,
