@@ -1,0 +1,307 @@
+/* pages/uzai/uzai.wxss */
+page{
+  background: #f7f7f7;
+}
+div{
+  display: block;
+}
+.product-list {
+    background: #fff
+}
+
+.product-list .title {
+    position: relative;
+    padding: 50rpx 0 45rpx;
+    text-align: center;
+}
+
+.product-list .title .round-tip {
+    position: absolute;
+    top: -18rpx;
+    left: 50%;
+    margin-left: -18rpx;
+    width: 36rpx;
+    height: 36rpx;
+    display: block;
+    border-radius: 50%;
+    background: #F7F7F7
+}
+
+.product-list .title span {
+    display: block;
+    font-size: 26rpx;
+    color: #999;
+    line-height: 26rpx
+}
+
+.product-list .title span.tit {
+    font-size: 32rpx;
+    line-height: 32rpx;
+    padding-bottom: 1rpx;
+    background: -webkit-linear-gradient(left,#444,#7f6b67 40%,#a77269 55%,#d77b6a 60%,#f7826c);
+    -webkit-background-clip: text;
+    color: transparent
+}
+
+.product-list .title span i {
+    width: 3rpx;
+    display: inline-block;
+    vertical-align: middle;
+    height: 1px;
+    background: #e2e2e2;
+    margin: 0 2rpx;
+    position: relative;
+    top: -2rpx;
+}
+
+.product-list .product-tit {
+    font-size: 3rpx;
+    color: #666;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow-x: auto;
+    padding-bottom: 40rpx
+}
+
+.product-list .product-tit::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+    background: 0 0
+}
+
+.product-list .product-tit span {
+    display: inline-block;
+    padding: 0 30rpx;
+    height: 68rpx;
+    line-height: 68rpx;
+    text-align: center;
+    font-size: 30rpx;
+    border-radius: 34rpx
+}
+
+.product-list .product-tit span:first-child {
+    margin-left: 20rpx
+}
+
+.product-list .product-tit .on-1 {
+    color: #fff;
+    background: -webkit-linear-gradient(30deg,#ff1a62,#ff745a);
+    background: -o-linear-gradient(30deg,#ff1a62,#ff745a);
+    background: linear-gradient(30deg,#ff1a62,#ff745a);
+    box-shadow: 0 6px 5px -3px rgba(255,77,119,.6);
+    -webkit-box-shadow: 0 6px 5px -3px rgba(255,77,119,.6)
+}
+.product-part {
+    overflow: hidden
+}
+
+.product-part .part {
+    font-size: 30rpx;
+    color: #666;
+    width: 345rpx;
+    margin: 0 0 30rpx 20rpx;
+    float: left
+}
+
+.product-part .part .img-lazy {
+    width: 100%;
+    height: 242rpx
+}
+
+.product-part .part.big-img {
+    width: 710rpx
+}
+
+.product-part .part.big-img .img-lazy {
+    height: 344rpx
+}
+
+.product-part .part .img {
+    display: block;
+    position: relative;
+    border-radius: 10rpx;
+    overflow: hidden
+}
+
+.product-part .part .cover-tit {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 20rpx;
+    color: #fff;
+    background: url(https://r03.uzaicdn.com/content/hybrid/images/index/cover-bg.png) repeat-x bottom;
+    background-size: auto 72rpx;
+    height: 42rpx;
+    padding-top: 30rpx;
+    width: 100%;
+    text-indent: 12rpx
+}
+
+.product-part .part .icon-dizhi {
+    font-size: 18rpx;
+    display: inline-block;
+    margin-right: 5rpx
+}
+
+.product-part .part .hr {
+    height: 20rpx;
+    width: 2rpx;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10rpx;
+    background: #fff
+}
+
+.product-part .tit {
+    padding: 22rpx 25rpx 5rpx;
+    margin-bottom: 15rpx;
+    height: 70rpx;
+    line-height: 38rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical
+}
+
+.product-part .price {
+    font-size: 24rpx;
+    color: #666;
+    padding-left: 25rpx;
+}
+
+.product-part .price em {
+    color: #f44d59
+}
+
+.product-part .price b {
+    font-size: 36rpx;
+    display: inline-block;
+    margin: 0 10rpx 0 5rpx;
+}
+.footer-logo {
+    height: 120rpx;
+    padding-top: 30rpx;
+    background: url(https://r03.uzaicdn.com/content/hybrid/images/index/drop-down.png) no-repeat center 30rpx #f7f7f7;
+    background-size: 160rpx auto
+}
+.recommend-banner {
+    padding: 0 20rpx 20rpx;
+    overflow: hidden
+}
+
+.recommend-banner image {
+    width: 100%;
+    height: 100%
+}
+
+.recommend-banner .left {
+    width: 224rpx;
+    height: 376rpx;
+    display: block;
+    float: left
+}
+
+.recommend-banner .left .img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box
+}
+
+.recommend-banner .right {
+    float: right
+}
+
+.recommend-banner .right .img {
+    display: block;
+    box-sizing: border-box;
+    vertical-align: middle;
+    height: 170rpx;
+    width: 467rpx
+}
+
+.recommend-banner .top {
+    overflow: hidden;
+    padding: 16rpx 0 20rpx
+}
+
+.recommend-banner .top .img {
+    display: block;
+    width: 224rpx;
+    box-sizing: border-box;
+    vertical-align: middle;
+    float: left
+}
+
+.recommend-banner .top .img:first-child {
+    margin-right: 20rpx;
+}
+
+.recommend-banner .bottom {
+    clear: both;
+    overflow: hidden;
+    padding-top: 20rpx;
+}
+
+.recommend-banner .bottom .img {
+    height: 170rpx;
+    width: 224rpx;
+    display: block;
+    vertical-align: middle;
+    box-sizing: border-box
+}
+
+.recommend-banner .bottom .img.last {
+    margin-right: 20rpx;
+}
+
+.recommend-banner .bottom.type-first .img:first-child {
+    width: 468rpx
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.discount-banner {
+    padding: 20rpx 0 15rpx
+}
+
+.discount-banner ul {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow-x: auto;
+    height: 188rpx
+}
+
+.discount-banner ul::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+    background: 0 0
+}
+
+.discount-banner li {
+    display: inline-block;
+    padding-right: 12rpx;
+    vertical-align: middle
+}
+
+.discount-banner li:first-child {
+    padding-left: 20rpx
+}
+
+.discount-banner image {
+    width: 322rpx;
+    height: 188rpx;
+    display: block;
+    border-radius: 10rpx;
+    box-sizing: border-box
+}

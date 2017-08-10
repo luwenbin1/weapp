@@ -1,0 +1,64 @@
+<!--pages/uzai/uzai.wxml-->
+<div class="discount-banner">
+  <ul class="swiper-img">
+    <li>
+      <a href="https://m.uzai.com/aggregation?cityid=1" class="img"><image class="img-lazy" src="https://r04.uzaicdn.com/cms20170801/d48e11d382bc4aaca69a0bda18095292.png?"></image></a>
+    </li>
+    <li>
+      <a href="http://mhd.uzai.com/hybrid/ddwl?cityid=1" class="img"><image class="img-lazy" src="https://r04.uzaicdn.com/cms20170802/72c853d841e64dfdab64b8d5eec16c86.png?"></image></a>
+    </li>
+    <li>
+      <a href="https://m.uzai.com/o/Sale?cityid=1" class="img"><image class="img-lazy" src="https://r04.uzaicdn.com/cms20170802/54749771ef08465b9af1f958801058f8.png?"></image></a>
+    </li>
+  </ul>
+</div>
+
+<div class="recommend-banner">
+  <div class="recommend-banner-first">
+    <div class="left">
+      <a href="https://m.uzai.com/SeasonWhereToGo" class="img">
+        <image class=" img-lazy" src="https://r04.uzaicdn.com/cms20170713/8dc438ae50554b06821cbbec8ccd8939.png?"></image>
+      </a>
+    </div>
+    <div class="right">
+      <div class="top">
+        <a href="https://mhd.uzai.com/japansix/" class="img">
+          <image class=" img-lazy" src="https://r04.uzaicdn.com/cms20170803/df393bf25ff24886933107f0c6778485.jpg?imageView2/1/format/jpg"></image>
+        </a>
+        <a href="http://m.uzai.com/zhuanji/352" class="img">
+          <image class=" img-lazy" src="https://r04.uzaicdn.com/cms20170803/37e63135a1c54d2a990979467a8d2294.jpg?imageView2/1/format/jpg"></image>
+        </a>
+      </div>
+      <a href="http://m.uzai.com/zhuanji/356" class="img">
+        <image class=" img-lazy" src="https://r04.uzaicdn.com/cms20170803/2cf5acce2eeb43cb9050a99591cdb8de.jpg?imageView2/1/format/jpg"></image>
+      </a>
+    </div>
+    <div class="bottom type-first">
+      <a href="http://m.uzai.com/zhuanji/295" class=" fl img">
+        <image class=" img-lazy" src="https://r04.uzaicdn.com/cms20170803/d8d38c26a91c40d5b62c5cc873849a7e.png?"></image>
+      </a>
+      <a href="http://m.uzai.com/zhuanji/300" class=" fr img">
+        <image class=" img-lazy" src="https://r04.uzaicdn.com/cms20170803/acdb63aeb2f24c0b9b32f27c3e318e56.png?"></image>
+      </a>
+
+    </div>
+  </div>
+</div>
+<!-- 推荐产品入口 二 6 -->
+<div class="product-list">
+  <div class="title">
+    <em class="round-tip"></em>
+    <span class="tit">当季热卖</span>
+    <span><i></i>即刻出发 玩转世界 <i></i></span>
+  </div>
+  <div class="product-tit">
+    <span class="on-{{on_class[0]}}" bindtap="tapName" data-index="0" data-positionid="5CE3521C-6531-492E-AE71-E240E25DF6E9">本季推荐</span>
+    <span class="on-{{on_class[1]}}" bindtap="tapName" data-index="1" data-positionid="3EDB4067-E5D9-4546-8E1F-AE50F397B8A4">出境跟团</span>
+    <span class="on-{{on_class[2]}}" bindtap="tapName" data-index="2" data-positionid="1E85676A-DF5A-48F0-A479-68E60503223A">醉美中国</span>
+    <span class="on-{{on_class[3]}}" bindtap="tapName" data-index="3" data-positionid="61A16A5C-2ABB-4A5A-842E-BB9524F35B14">随心自由</span>
+  </div>
+  <div class="product-part" id="Product">
+    <rich-text nodes="{{message}}"></rich-text>
+  </div>
+</div>
+<div class="footer-logo"></div>

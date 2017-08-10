@@ -5,6 +5,7 @@
         "pages/say/say",
         "pages/forme/forme",
         "pages/sign/sign",
+        "pages/uzai/uzai",
         "pages/upload_img/upload_img"
     ],
     "window": {
