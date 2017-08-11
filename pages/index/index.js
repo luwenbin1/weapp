@@ -249,6 +249,16 @@ Page({
           });
         }
       })
+    },
+    add_mobile(){
+      var add_mobile_v = wx.addPhoneContact({
+        firstName: "陆文斌666",
+        mobilePhoneNumber: "13552065230",
+        weChatNumber: "13813143621",
+        addressCountry: "中国",
+        addressState: "江苏",
+        addressCity: "扬州"
+      })
     }
 });
 var userInfo = '';
