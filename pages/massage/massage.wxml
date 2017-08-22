@@ -1,0 +1,81 @@
+<!--pages/massage/massage.wxml-->
+<swiper indicator-dots="true" autoplay="true" interval="2000" duration="300">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150" />
+    </swiper-item>
+  </block>
+</swiper>
+<div class="main1">
+  <div class="main1_top">
+    <image src="http://img.weiye.me/zcimgdir/album/file_594c7888d0d72.png"></image>
+    高级服务
+    <image src="http://img.weiye.me/zcimgdir/album/file_594c7888d0d72.png"></image>
+  </div>
+  <div class="main1_m">
+    <navigator url="../say/say" open-type="navigateTo">
+    <div class="main1_mli">
+      <image src="http://img.weiye.me/zcimgdir/album/file_594a40699c0b8.png"></image>
+      <div class="main1_mli_m">
+        <div class="name">张大师一条龙上门服务</div>
+        <div class="youhui">半价优惠</div>
+        <div class="jiage">￥569</div>
+      </div>
+    </div>
+    </navigator>
+    <navigator url="../say/say" open-type="navigateTo">
+    <div class="main1_mli">
+      <image src="http://img.weiye.me/zcimgdir/album/file_594a40699c0b8.png"></image>
+      <div class="main1_mli_m">
+        <div class="name">张大师按摩服务</div>
+        <div class="youhui">24H服务</div>
+        <div class="jiage">￥969</div>
+      </div>
+    </div>
+    </navigator>
+    <navigator url="../say/say" open-type="navigateTo">
+    <div class="main1_mli">
+      <image src="http://img.weiye.me/zcimgdir/album/file_594a40699c0b8.png"></image>
+      <div class="main1_mli_m">
+        <div class="name">张大师一条龙上门服务</div>
+        <div class="youhui">半价优惠</div>
+        <div class="jiage">￥569</div>
+      </div>
+    </div>
+    </navigator>
+    <navigator url="../say/say" open-type="navigateTo">
+    <div class="main1_mli">
+      <image src="http://img.weiye.me/zcimgdir/album/file_594a4630d5e69.png"></image>
+      <div class="main1_mli_m">
+        <div class="name">张大师按摩服务</div>
+        <div class="youhui">24H服务</div>
+        <div class="jiage">￥969</div>
+      </div>
+    </div>
+    </navigator>
+  </div>
+</div>
+
+<div class="bottom-nav background-ele">
+  <div class="item router nav_li nav_li_active">
+    <a href="javascript:;" class="img-thumb-wrap">
+      <image class="img-before" src="http://img.weiye.me/zcimgdir/album/file_5948ee7bad3df.png"></image>
+      <image class="img-after" src="http://img.weiye.me/zcimgdir/album/file_5948ee842c6a3.png"></image>
+    </a>
+    <span class="bottom-text">首页</span></div>
+  <div class="item router nav_li">
+    <a href="javascript:;" class="img-thumb-wrap">
+      <image class="img-before" src="http://img.weiye.me/zcimgdir/album/file_5948eb07c00e6.png"></image>
+      <image class="img-after" src="http://img.weiye.me/zcimgdir/album/file_5948eb0bf3d5f.png"></image>
+    </a><span class="bottom-text">预约</span></div>
+  <div class="item router nav_li">
+    <a href="javascript:;" class="img-thumb-wrap">
+      <image class="img-before" src="http://img.weiye.me/zcimgdir/album/file_5948eb104bd3a.png"></image>
+      <image class="img-after" src="http://img.weiye.me/zcimgdir/album/file_5948eb1432764.png"></image>
+    </a><span class="bottom-text">活动</span></div>
+  <div class="item router nav_li">
+    <a href="javascript:;" class="img-thumb-wrap">
+      <image class="img-before" src="http://img.weiye.me/zcimgdir/album/file_5948eb8a36491.png"></image>
+      <image class="img-after" src="http://img.weiye.me/zcimgdir/album/file_5948eb8de0583.png"></image>
+    </a><span class="bottom-text">我的</span></div>
+</div>

@@ -6,6 +6,7 @@
         "pages/forme/forme",
         "pages/sign/sign",
         "pages/uzai/uzai",
+        "pages/massage/massage",
         "pages/upload_img/upload_img"
     ],
     "window": {
