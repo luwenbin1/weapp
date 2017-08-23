@@ -1,25 +1,28 @@
 <!--pages/subscribe/subscribe.wxml-->
 <form name='pushMsgFm' report-submit="true" bindsubmit='orderSign'>
-    enter product:<input type="text" name="product" value='' placeholder="enter your name" />
-    detail: <input type="text" name='detail' placeholder="enter desc" />
-    select sex:<switch type="switch" name='sex' />
+    选择的项目名称:<input type="text" name="mingcheng" value='' placeholder="请输入服务名称" />
+    预约地点: <input type="text" name='didian' placeholder="请输入预约地点" />
+    您的称呼: <input type="text" name='xingming' placeholder="请输入您的称呼" />
+    预约时间: <input type="text" value="" name='shijian' placeholder="请输入预约时间" />
+    联系方式: <input type="number" value="" name='lianxi' placeholder="请输入联系方式" />
     <button form-type="submit">submit</button>
 </form>
 
 <div class="bottom-nav background-ele">
   <div class="item router nav_li">
+    <navigator url="../massage/massage" open-type="navigate">
     <a href="javascript:;" class="img-thumb-wrap">
       <image class="img-before" src="http://img.weiye.me/zcimgdir/album/file_5948ee7bad3df.png"></image>
       <image class="img-after" src="http://img.weiye.me/zcimgdir/album/file_5948ee842c6a3.png"></image>
     </a>
-    <span class="bottom-text">首页</span></div>
+    <span class="bottom-text">首页</span>
+    </navigator>
+  </div>
   <div class="item router nav_li nav_li_active">
-    <navigator url="../subscribe/subscribe" open-type="navigateTo">
     <a href="javascript:;" class="img-thumb-wrap">
       <image class="img-before" src="http://img.weiye.me/zcimgdir/album/file_5948eb07c00e6.png"></image>
       <image class="img-after" src="http://img.weiye.me/zcimgdir/album/file_5948eb0bf3d5f.png"></image>
     </a>
-    </navigator>
     <span class="bottom-text">预约</span></div>
   <div class="item router nav_li">
     <a href="javascript:;" class="img-thumb-wrap">

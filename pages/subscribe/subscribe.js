@@ -103,30 +103,34 @@ Page({
       template_id: 'ZYzE4JsPXEDjcCv2VaQikJW891CyUFSQL-TOxvZpJBY',
       form_id: fId,
       access_token: _this.data.access_token,
-      value: {
+      data: {
         "keyword1": {
-          "value": fObj.product,
+          "value": fObj.xingming,
           "color": "#4a4a4a"
         },
         "keyword2": {
-          "value": fObj.detail,
+          "value": fObj.didian,
           "color": "#9b9b9b"
         },
         "keyword3": {
-          "value": new Date().getDate(),
+          "value": new Date().toLocaleString(),
           "color": "#9b9b9b"
         },
         "keyword4": {
-          "value": "201612130909",
+          "value": fObj.shijian,
           "color": "#9b9b9b"
         },
         "keyword5": {
-          "value": "$300",
+          "value": fObj.lianxi,
+          "color": "#9b9b9b"
+        },
+        "keyword6": {
+          "value": fObj.mingcheng,
           "color": "red"
         }
       },
       color: '#ccc',
-      emphasis_keyword: 'keyword1.DATA'
+      emphasis_keyword: 'keyword6.DATA'
     }
     wx.request({
       url: config.service.bespoke,
