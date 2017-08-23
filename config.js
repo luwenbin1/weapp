@@ -26,6 +26,9 @@ var config = {
         up_img: `https://${host}/up_img`,
         sign: `https://${host}/sign`,
         resign: `https://${host}/resign`,
+        addtoken: `https://${host}/addtoken`,
+        addopenid: `https://${host}/addopenid`,
+        bespoke: `https://${host}/bespoke`,
         forme_delUrl: `https://${host}/forme_del`
     }
 };

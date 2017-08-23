@@ -1,0 +1,50 @@
+/* pages/subscribe/subscribe.wxss */
+.bottom-nav {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(238, 238, 238) 0px 0px 1px;
+  color: rgb(153, 153, 153);
+  font-size: 12px;
+  padding-bottom: 0px;
+  padding-top: 5px;
+}
+
+.bottom-nav {
+  color: rgb(58, 186, 248);
+  width: 100%;
+  background: #fff;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-nav .nav_li {
+  width: 25%;
+  float: left;
+}
+
+.bottom-nav image {
+  width: 42rpx;
+  height: 42rpx;
+  display: block;
+  margin: auto;
+  padding-top: 10rpx;
+}
+
+.bottom-nav .nav_li .img-after {
+  display: none;
+}
+
+.bottom-nav .nav_li_active .img-after {
+  display: block;
+}
+
+.bottom-nav .nav_li_active .img-before {
+  display: none;
+}
+
+.bottom-nav .bottom-text {
+  text-align: center;
+  display: block;
+  margin-top: 10rpx;
+}
