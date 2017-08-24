@@ -1,4 +1,4 @@
-/* pages/subscribe/subscribe.wxss */
+/* pages/activity/activity.wxss */
 .bottom-nav {
   background-color: rgb(255, 255, 255);
   box-shadow: rgb(238, 238, 238) 0px 0px 1px;
@@ -47,30 +47,4 @@
   text-align: center;
   display: block;
   margin-top: 10rpx;
-}
-.li{
-  overflow: hidden;
-  margin: 20rpx;
-  display: block;
-}
-.li text{
-  float: left;
-  font-size: 28rpx;
-  line-height: 54rpx;
-}
-.li input{
-  float: left;
-  width: 400rpx;
-  line-height: 30rpx;
-  margin-left: 20rpx;
-  font-size: 30rpx;
-}
-.picker{
-  font-size: 30rpx;
-  line-height: 54rpx;
-  float: left;
-  margin-left: 20rpx;
-}
-.section{
-  float: left;
 }

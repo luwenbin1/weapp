@@ -1,6 +1,12 @@
 // pages/subscribe/subscribe.js
 // 引入配置
 var config = require('../../config');
+// 显示繁忙提示
+var showBusy = text => wx.showToast({
+  title: text,
+  icon: 'loading',
+  duration: 1000
+});
 Page({
 
   /**
@@ -8,7 +14,9 @@ Page({
    */
   data: {
     "access_token":"",
-    "openid":""
+    "openid":"",
+    "date": new Date().toLocaleDateString(),
+    "time": '12:00'
   },
 
   /**
@@ -98,6 +106,22 @@ Page({
     var _this = this;
     var fId = e.detail.formId;
     var fObj = e.detail.value;
+    if (!e.detail.value.mingcheng) {
+      showBusy('项目名称不能为空');
+      return false;
+    };
+    if (!e.detail.value.didian) {
+      showBusy('地址不能为空');
+      return false;
+    };
+    if (!e.detail.value.xingming) {
+      showBusy('称呼不能为空');
+      return false;
+    };
+    if (!e.detail.value.lianxi) {
+      showBusy('联系方式不能为空');
+      return false;
+    };
     var d = {
       touser: _this.data.openid,
       template_id: 'ZYzE4JsPXEDjcCv2VaQikJW891CyUFSQL-TOxvZpJBY',
@@ -117,7 +141,7 @@ Page({
           "color": "#9b9b9b"
         },
         "keyword4": {
-          "value": fObj.shijian,
+          "value": _this.data.date +' '+ _this.data.time,
           "color": "#9b9b9b"
         },
         "keyword5": {
@@ -145,5 +169,33 @@ Page({
         console.log(res.data);
       }
     });
-  }
+    wx.request({
+      url: config.service.order,
+      data: {
+        data: d
+      },
+      method: 'POST',
+      header: {
+        'content-type': 'application/json'
+      },
+      success: function (res) {
+        if(res.data === '200'){
+          showBusy('预约成功，请勿重复提交');
+          setTimeout(function () { wx.redirectTo({ url: '../user/user' }) }, 1000)
+        }else{
+          showBusy('网络错误');
+        };
+      }
+    });
+  },
+  bindDateChange: function (e) {
+    this.setData({
+      date: e.detail.value
+    })
+  },
+  bindTimeChange: function (e) {
+    this.setData({
+      time: e.detail.value
+    })
+  },
 })

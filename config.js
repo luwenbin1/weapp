@@ -29,6 +29,8 @@ var config = {
         addtoken: `https://${host}/addtoken`,
         addopenid: `https://${host}/addopenid`,
         bespoke: `https://${host}/bespoke`,
+        order: `https://${host}/order`,
+        user: `https://${host}/user`,
         forme_delUrl: `https://${host}/forme_del`
     }
 };

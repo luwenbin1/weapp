@@ -64,7 +64,7 @@
     </a>
     <span class="bottom-text">首页</span></div>
   <div class="item router nav_li">
-    <navigator url="../subscribe/subscribe" open-type="navigate">
+    <navigator url="../subscribe/subscribe" open-type="redirect">
     <a href="javascript:;" class="img-thumb-wrap">
       <image class="img-before" src="http://img.weiye.me/zcimgdir/album/file_5948eb07c00e6.png"></image>
       <image class="img-after" src="http://img.weiye.me/zcimgdir/album/file_5948eb0bf3d5f.png"></image>
@@ -73,13 +73,20 @@
     </navigator>
   </div>
   <div class="item router nav_li">
+    <navigator url="../activity/activity" open-type="redirect">
     <a href="javascript:;" class="img-thumb-wrap">
       <image class="img-before" src="http://img.weiye.me/zcimgdir/album/file_5948eb104bd3a.png"></image>
       <image class="img-after" src="http://img.weiye.me/zcimgdir/album/file_5948eb1432764.png"></image>
-    </a><span class="bottom-text">活动</span></div>
+    </a>
+    <span class="bottom-text">活动</span>
+    </navigator>
+  </div>
   <div class="item router nav_li">
+    <navigator url="../user/user" open-type="redirect">
     <a href="javascript:;" class="img-thumb-wrap">
       <image class="img-before" src="http://img.weiye.me/zcimgdir/album/file_5948eb8a36491.png"></image>
       <image class="img-after" src="http://img.weiye.me/zcimgdir/album/file_5948eb8de0583.png"></image>
-    </a><span class="bottom-text">我的</span></div>
+    </a><span class="bottom-text">我的</span>
+    </navigator>
+  </div>
 </div>

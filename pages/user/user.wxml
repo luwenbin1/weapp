@@ -1,0 +1,50 @@
+<!--pages/user/user.wxml-->
+<div>
+    我的订单
+</div>
+<div class="li">
+  <view wx:for="{{list}}" class="main">
+      <view class="main_top">
+        <view class="user">{{item.xingming}}</view>
+      </view>
+      <view class="main_m">{{item.yuyve}}</view>
+      <view class="main_m">{{item.didian}}</view>
+      <view class="main_m">{{item.mingcheng}}</view>
+      <view class="main_m">{{item.lianxi}}</view>
+      <view class="main_time">{{item.time}}</view>
+    </view>
+</div>
+<div class="bottom-nav background-ele">
+  <div class="item router nav_li nav_li_active">
+    <navigator url="../massage/massage" open-type="redirect">
+    <a href="javascript:;" class="img-thumb-wrap">
+      <image class="img-before" src="http://img.weiye.me/zcimgdir/album/file_5948ee7bad3df.png"></image>
+      <image class="img-after" src="http://img.weiye.me/zcimgdir/album/file_5948ee842c6a3.png"></image>
+    </a>
+    <span class="bottom-text">首页</span>
+    </navigator>
+  </div>
+  <div class="item router nav_li">
+    <navigator url="../subscribe/subscribe" open-type="redirect">
+    <a href="javascript:;" class="img-thumb-wrap">
+      <image class="img-before" src="http://img.weiye.me/zcimgdir/album/file_5948eb07c00e6.png"></image>
+      <image class="img-after" src="http://img.weiye.me/zcimgdir/album/file_5948eb0bf3d5f.png"></image>
+    </a>
+    <span class="bottom-text">预约</span>
+    </navigator>
+  </div>
+  <div class="item router nav_li">
+    <navigator url="../activity/activity" open-type="redirect">
+    <a href="javascript:;" class="img-thumb-wrap">
+      <image class="img-before" src="http://img.weiye.me/zcimgdir/album/file_5948eb104bd3a.png"></image>
+      <image class="img-after" src="http://img.weiye.me/zcimgdir/album/file_5948eb1432764.png"></image>
+    </a>
+    <span class="bottom-text">活动</span>
+    </navigator>
+  </div>
+  <div class="item router nav_li nav_li_active">
+    <a href="javascript:;" class="img-thumb-wrap">
+      <image class="img-before" src="http://img.weiye.me/zcimgdir/album/file_5948eb8a36491.png"></image>
+      <image class="img-after" src="http://img.weiye.me/zcimgdir/album/file_5948eb8de0583.png"></image>
+    </a><span class="bottom-text">我的</span></div>
+</div>

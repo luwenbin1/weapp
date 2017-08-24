@@ -8,6 +8,8 @@
         "pages/uzai/uzai",
         "pages/massage/massage",
         "pages/subscribe/subscribe",
+        "pages/activity/activity",
+        "pages/user/user",
         "pages/upload_img/upload_img"
     ],
     "window": {

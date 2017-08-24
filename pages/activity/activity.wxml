@@ -1,27 +1,5 @@
-<!--pages/subscribe/subscribe.wxml-->
-<form name='pushMsgFm' report-submit="true" bindsubmit='orderSign'>
-  <div class="li"><text>项目名称:</text><input type="text" name="mingcheng" value='' placeholder="请输入服务名称" /></div>
-  <div class="li"><text>预约地点: </text><input type="text" name='didian' placeholder="请输入预约地点" /></div>
-  <div class="li"><text>您的称呼: </text><input type="text" name='xingming' placeholder="请输入您的称呼" /></div>
-  <div class="li"><text>预约时间: </text>
-    <view class="section">
-      <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
-        <view class="picker">
-          {{date}}
-        </view>
-      </picker>
-    </view>
-    <view class="section">
-      <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
-        <view class="picker">
-          {{time}}
-        </view>
-      </picker>
-    </view>
-  </div>
-  <div class="li"><text>联系方式: </text><input type="number" value="" name='lianxi' placeholder="请输入联系方式" /></div>
-  <button form-type="submit">立即预约</button>
-</form>
+<!--pages/activity/activity.wxml-->
+<text>等待广告位</text>
 
 <div class="bottom-nav background-ele">
   <div class="item router nav_li">
@@ -33,22 +11,20 @@
       <span class="bottom-text">首页</span>
     </navigator>
   </div>
-  <div class="item router nav_li nav_li_active">
+  <div class="item router nav_li">
+    <navigator url="../subscribe/subscribe" open-type="redirect">
     <a href="javascript:;" class="img-thumb-wrap">
       <image class="img-before" src="http://img.weiye.me/zcimgdir/album/file_5948eb07c00e6.png"></image>
       <image class="img-after" src="http://img.weiye.me/zcimgdir/album/file_5948eb0bf3d5f.png"></image>
     </a>
     <span class="bottom-text">预约</span>
+    </navigator>
   </div>
-  <div class="item router nav_li">
-    <navigator url="../activity/activity" open-type="redirect">
+  <div class="item router nav_li nav_li_active">
     <a href="javascript:;" class="img-thumb-wrap">
       <image class="img-before" src="http://img.weiye.me/zcimgdir/album/file_5948eb104bd3a.png"></image>
       <image class="img-after" src="http://img.weiye.me/zcimgdir/album/file_5948eb1432764.png"></image>
-    </a>
-    <span class="bottom-text">活动</span>
-    </navigator>
-  </div>
+    </a><span class="bottom-text">活动</span></div>
   <div class="item router nav_li">
     <navigator url="../user/user" open-type="redirect">
     <a href="javascript:;" class="img-thumb-wrap">
