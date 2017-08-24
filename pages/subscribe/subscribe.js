@@ -179,7 +179,7 @@ Page({
         'content-type': 'application/json'
       },
       success: function (res) {
-        if(res.data === '200'){
+        if(res.data === 200){
           showBusy('预约成功，请勿重复提交');
           setTimeout(function () { wx.redirectTo({ url: '../user/user' }) }, 1000)
         }else{

@@ -1,6 +1,12 @@
 // pages/user/user.js
 // 引入配置
 var config = require('../../config');
+// 显示繁忙提示
+var showBusy = text => wx.showToast({
+  title: text,
+  icon: 'loading',
+  duration: 1000
+});
 Page({
 
   /**
@@ -41,12 +47,13 @@ Page({
               method: 'GET',
               success: function (res) {
                 console.log(res);
-                // if (res.data === '200') {
-                //   showBusy('预约成功，请勿重复提交');
-                //   setTimeout(function () { wx.redirectTo({ url: '../user/user' }) }, 1000)
-                // } else {
-                //   showBusy('网络错误');
-                // };
+                if (res.statusCode === 200) {
+                  _this.setData({
+                    "list": res.data
+                  });
+                } else {
+                  showBusy('网络错误');
+                };
               }
             });
           }
@@ -109,13 +116,10 @@ Page({
         url: config.service.user,
         data: {
           openid: _this.data.openid,
-          page: _this.data.page,
+          page: new_page,
           index: _this.data.index,
         },
-        method: 'POST',
-        header: {
-          'content-type': 'application/json'
-        },
+        method: 'GET',
         success: function (res) {
           wx.hideToast();
           _this.setData({
