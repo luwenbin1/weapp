@@ -1,0 +1,117 @@
+<view class="root">
+  <view class="line">
+    <text>综合示例</text>
+    <view bindtap="openChat" class="line-control">
+      <view class="item">
+        <view class="item-inner">Utour前端聊天室</view>
+      </view>
+    </view>
+  </view>
+  <view class="line">
+    <text>综合示例二</text>
+    <view class="line-control">
+      <navigator url="../say/say" open-type="navigateTo">
+        <view class="item">
+          <view class="item-inner">想要对我说</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <view class="line">
+    <text>综合示例三</text>
+    <view class="line-control">
+      <navigator url="../forme/forme" open-type="navigateTo">
+        <view class="item">
+          <view class="item-inner">对我说的话</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <view class="line">
+    <text>综合示例四</text>
+    <view class="line-control">
+      <navigator url="../upload_img/upload_img" open-type="navigateTo">
+        <view class="item">
+          <view class="item-inner">上传图片</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <view class="line">
+    <text>综合示例五</text>
+    <view class="line-control" bindtap="sign">
+      <view class="item">
+        <view class="item-inner">签到</view>
+      </view>
+    </view>
+  </view>
+  <view class="line">
+    <text>综合示例六</text>
+    <view class="line-control">
+      <navigator url="../uzai/uzai" open-type="navigateTo">
+        <view class="item">
+          <view class="item-inner">m.uzai.com小程序(目前仅首页)</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <view class="line">
+    <text>综合示例七</text>
+    <view class="line-control" bindtap="add_mobile">
+      <view class="item">
+        <view class="item-inner">添加我为手机联系人</view>
+      </view>
+    </view>
+  </view>
+  <view class="line">
+    <text>综合示例八</text>
+    <view class="line-control">
+    <navigator url="../massage/massage" open-type="navigateTo">
+      <view class="item">
+        <view class="item-inner">按摩test</view>
+      </view>
+      </navigator>
+    </view>
+  </view>
+  <view class="line">
+    <text>登录接口测试</text>
+    <input type="text" value="{{loginUrl}}" disabled class="hide"></input>
+    <view class="line-control">
+      <view bindtap="doLogin" class="item">
+        <view class="item-inner">登录</view>
+      </view>
+      <view bindtap="clearSession" class="item">
+        <view class="item-inner">清除登录会话</view>
+      </view>
+    </view>
+  </view>
+  <view class="line">
+    <text>带会话请求测试</text>
+    <input type="text" value="{{requestUrl}}" disabled class="hide"></input>
+    <view class="line-control">
+      <view bindtap="doRequest" class="item">
+        <view class="item-inner">请求</view>
+      </view>
+    </view>
+  </view>
+  <view class="line">
+    <text>WebSocket 信道服务测试</text>
+    <input type="text" value="{{tunnelUrl}}" disabled class="hide" />
+    <view class="line-control">
+      <view class="item flag">
+        <view class="item-inner">信道
+          <view class="switch-status">
+            <text>{{tunnelStatusText[tunnelStatus]}}</text>
+            <switch bindchange="switchTunnel" class="switch" checked="{{tunnelStatus == 'connected'}}" />
+          </view>
+        </view>
+      </view>
+      <view bindtap="sendMessage" class="item {{tunnelStatus == 'connected' || 'disabled'}}">
+        <view class="item-inner">发送消息</view>
+      </view>
+      <view bindtap="testReconnect" class="item {{tunnelStatus == 'connected' || 'disabled'}}">
+        <view class="item-inner">测试重连</view>
+      </view>
+    </view>
+  </view>
+</view>

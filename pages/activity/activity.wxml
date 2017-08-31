@@ -3,7 +3,7 @@
 
 <div class="bottom-nav background-ele">
   <div class="item router nav_li">
-    <navigator url="../massage/massage" open-type="redirect">
+    <navigator url="../index/index" open-type="redirect">
       <a href="javascript:;" class="img-thumb-wrap">
         <image class="img-before" src="http://img.weiye.me/zcimgdir/album/file_5948ee7bad3df.png"></image>
         <image class="img-after" src="http://img.weiye.me/zcimgdir/album/file_5948ee842c6a3.png"></image>
