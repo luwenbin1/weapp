@@ -95,6 +95,7 @@ page {
   float: left;
   width: 345rpx;
   margin-left: 20rpx;
+  margin-top: 20rpx;
 }
 
 .main1_mli image {

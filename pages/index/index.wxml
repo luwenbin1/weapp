@@ -13,7 +13,7 @@
     <image src="http://img.weiye.me/zcimgdir/album/file_594c7888d0d72.png"></image>
   </div>
   <div class="main1_m">
-    <navigator url="../say/say" open-type="navigateTo">
+    <navigator url="../subscribe/subscribe" open-type="navigateTo">
     <div class="main1_mli">
       <image src="http://img.weiye.me/zcimgdir/album/file_594a40699c0b8.png"></image>
       <div class="main1_mli_m">
@@ -23,7 +23,7 @@
       </div>
     </div>
     </navigator>
-    <navigator url="../say/say" open-type="navigateTo">
+    <navigator url="../subscribe/subscribe" open-type="navigateTo">
     <div class="main1_mli">
       <image src="http://img.weiye.me/zcimgdir/album/file_594a40699c0b8.png"></image>
       <div class="main1_mli_m">
@@ -33,7 +33,7 @@
       </div>
     </div>
     </navigator>
-    <navigator url="../say/say" open-type="navigateTo">
+    <navigator url="../subscribe/subscribe" open-type="navigateTo">
     <div class="main1_mli">
       <image src="http://img.weiye.me/zcimgdir/album/file_594a40699c0b8.png"></image>
       <div class="main1_mli_m">
@@ -43,7 +43,7 @@
       </div>
     </div>
     </navigator>
-    <navigator url="../say/say" open-type="navigateTo">
+    <navigator url="../subscribe/subscribe" open-type="navigateTo">
     <div class="main1_mli">
       <image src="http://img.weiye.me/zcimgdir/album/file_594a4630d5e69.png"></image>
       <div class="main1_mli_m">

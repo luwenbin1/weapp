@@ -19,7 +19,7 @@
       </picker>
     </view>
   </div>
-  <div class="li"><text>联系方式: </text><input type="number" value="" name='lianxi' placeholder="请输入联系方式" /></div>
+  <div class="li"><text>联系方式: </text><input type="number" value="" name='lianxi' maxlength="11" placeholder="请输入联系方式" /></div>
   <button form-type="submit">立即预约</button>
 </form>
 

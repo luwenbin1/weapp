@@ -1,5 +1,5 @@
 <!--pages/activity/activity.wxml-->
-<text>等待广告位</text>
+<text>暂无</text>
 
 <div class="bottom-nav background-ele">
   <div class="item router nav_li">

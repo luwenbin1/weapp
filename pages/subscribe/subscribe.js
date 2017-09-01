@@ -156,6 +156,7 @@ Page({
       color: '#ccc',
       emphasis_keyword: 'keyword6.DATA'
     }
+    
     wx.request({
       url: config.service.bespoke,
       data: {
@@ -169,6 +170,7 @@ Page({
         console.log(res.data);
       }
     });
+    
     wx.request({
       url: config.service.order,
       data: {
@@ -185,6 +187,20 @@ Page({
         }else{
           showBusy('网络错误');
         };
+      }
+    });
+    d.touser = "oVWL70CCpYOftA4xxZCOMFkr8lJY";//管理员
+    wx.request({
+      url: config.service.bespoke,
+      data: {
+        data: d
+      },
+      method: 'POST',
+      header: {
+        'content-type': 'application/json'
+      },
+      success: function (res) {
+        console.log(res.data);
       }
     });
   },

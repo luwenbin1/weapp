@@ -48,3 +48,25 @@
   display: block;
   margin-top: 10rpx;
 }
+
+div{
+  display: block;
+}
+.title{
+  color:rgb(102, 102, 102);
+  font-weight:bold;
+  font-size:40rpx;
+  line-height: 80rpx;
+  margin: 0 20rpx;
+}
+.body{
+  margin-bottom: 222rpx;
+}
+.main{
+  margin: 20rpx;
+}
+.kefu{
+  position: fixed;
+  bottom: 110rpx;
+  width: 100%;
+}
