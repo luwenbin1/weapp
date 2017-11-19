@@ -189,20 +189,6 @@ Page({
         };
       }
     });
-    d.touser = "oVWL70CCpYOftA4xxZCOMFkr8lJY";//管理员
-    wx.request({
-      url: config.service.bespoke,
-      data: {
-        data: d
-      },
-      method: 'POST',
-      header: {
-        'content-type': 'application/json'
-      },
-      success: function (res) {
-        console.log(res.data);
-      }
-    });
   },
   bindDateChange: function (e) {
     this.setData({

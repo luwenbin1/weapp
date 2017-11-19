@@ -64,6 +64,9 @@ div{
 }
 .main{
   margin: 20rpx;
+  border: 1rpx solid #ccc;
+  padding: 10rpx;
+  font-size: 30rpx;
 }
 .kefu{
   position: fixed;

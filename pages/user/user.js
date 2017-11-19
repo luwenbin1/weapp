@@ -25,6 +25,11 @@ Page({
    */
   onLoad: function (options) {
     var _this = this;
+    wx.showToast({
+      title: "正在加载",
+      icon: 'loading',
+      duration: 10000
+    });
     wx.login({
       success: function (res) {
         wx.request({
@@ -54,6 +59,7 @@ Page({
                 } else {
                   showBusy('网络错误');
                 };
+                wx.hideToast();
               }
             });
           }

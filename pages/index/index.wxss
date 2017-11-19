@@ -96,6 +96,8 @@ page {
   width: 345rpx;
   margin-left: 20rpx;
   margin-top: 20rpx;
+  overflow: hidden;
+  border-radius: 10rpx;
 }
 
 .main1_mli image {
